@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Driftwood Isles — Tiny 3D Adventure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="game"></div>
+<div class="vignette"></div>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">✦</span><div><strong>DRIFTWOOD ISLES</strong><small>an endless little adventure</small></div></div>
+  <div class="day-pill"><span class="pulse"></span> EXPEDITION <b id="day">01</b></div>
+</header>
+<aside class="left-panel glass">
+  <div class="eyebrow">YOUR JOURNEY</div>
+  <h1>Find your<br><em>way out there.</em></h1>
+  <p class="intro">Explore the islands. Gather starshards. Build your raft. Find the beacon.</p>
+  <div class="quest">
+    <div class="quest-head"><span class="quest-icon">◇</span><div><strong>First light</strong><small>Collect starshards</small></div></div>
+    <div class="progress-track"><div id="progress-fill"></div></div>
+    <div class="progress-label"><span id="shards">0</span> / <span id="goal">5</span> starshards</div>
+  </div>
+  <div class="upgrade-row">
+    <div class="upgrade-icon">⌁</div><div class="upgrade-copy"><strong id="raft-title">Driftwood raft</strong><small id="raft-desc">A tiny start is still a start.</small></div><button id="upgrade" disabled>LOCKED</button>
+  </div>
+  <div class="status-line"><span class="status-dot"></span><span id="status">The sea is calm. Start exploring.</span></div>
+</aside>
+<div class="right-stack">
+  <div class="mini-card glass"><span class="tiny-label">STARSHARDS</span><strong id="shard-total">0</strong><span class="sparkle">✧</span></div>
+  <div class="mini-card glass"><span class="tiny-label">ISLES FOUND</span><strong id="isles">1</strong><span class="isle-icon">⌂</span></div>
+</div>
+<div class="controls glass">
+  <div class="control-title">HOW TO EXPLORE</div>
+  <div class="key-row"><span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span><span class="key-caption">move</span></div>
+  <div class="key-row"><span class="key wide">SHIFT</span><span class="key-caption">run</span><span class="mouse-icon">↔</span><span class="key-caption">drag to look</span></div>
+</div>
+<div class="bottom-note"><span class="crosshair">+</span> <span>WANDER A LITTLE. FIND A LOT.</span><span class="bottom-sep">•</span><span id="hint">A shimmer in the grass catches your eye.</span></div>
+<div id="toast" class="toast">Starshard found ✦</div>
+<div id="start-screen" class="start-screen">
+  <div class="start-card glass">
+    <div class="start-symbol">✦</div>
+    <div class="eyebrow">A SMALL WORLD, A BIG HORIZON</div>
+    <h2>Somewhere beyond<br>the <em>next island.</em></h2>
+    <p>Collect five starshards to wake the old beacon. Then keep exploring — the sea is bigger than it looks.</p>
+    <button id="start">BEGIN EXPLORING <span>↗</span></button>
+    <small>Best with a keyboard · progress saves on this device</small>
+  </div>
+</div>
+<script type="module" src="./game.js"></script>
+</body>
+</html>
