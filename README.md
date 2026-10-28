@@ -13,12 +13,7 @@ A small original browser-based 3D exploration game made for static hosting on Ve
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsalthapaliya2030-cyber%2Fdriftwood-isles)
 
-Click the button to import this project into your Vercel account and deploy your own live copy. Vercel may ask you to sign in and authorize GitHub first. This creates a deployment for whoever clicks it; it does not publish to every visitor automatically.
-1. Create a new GitHub repository named `driftwood-isles`.
-2. Upload `index.html`, `style.css`, `game.js`, `package.json`, and `vercel.json` to the repository root.
-3. In Vercel, choose **Add New → Project**, import the GitHub repository, and deploy.
-4. Framework preset: **Other**. Build command: leave blank. Output directory: `.`.
-5. Once deployed, open the Vercel URL. The game uses Three.js from jsDelivr, so it needs an internet connection.
+Click the button, sign in to Vercel if prompted, connect GitHub if requested, and follow Vercel's deployment steps. It creates a separate deployment under the account of the person who clicks it; it cannot deploy to everyone else's accounts automatically. The game is a static site, so select **Other** if asked for a framework, leave the build command blank, and use `.` as the output directory if needed. The game loads Three.js from jsDelivr and requires an internet connection.
 
 ## Embed in Google Sites
 After deploying, use **Insert → Embed → By URL** and paste your Vercel URL. If you want it embedded, keep the project public and test the published site, not just the Sites editor preview.
